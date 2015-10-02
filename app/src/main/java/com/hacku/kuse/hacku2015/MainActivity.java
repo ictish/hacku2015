@@ -1,16 +1,52 @@
 package com.hacku.kuse.hacku2015;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
+import android.widget.ImageButton;
 
 public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
+        //Remove title bar
+        this.requestWindowFeature(Window.FEATURE_NO_TITLE);
+
+        //Remove notification bar
+//        this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        ImageButton btnBinbo = (ImageButton) findViewById(R.id.btnBinbo);
+        btnBinbo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, MainPopUp.class));
+            }
+        });
+
+        ImageButton btnHome = (ImageButton) findViewById(R.id.btnHome);
+        btnHome.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, MainActivity.class));
+            }
+        });
+
+        ImageButton btnGraph = (ImageButton) findViewById(R.id.btnGraph);
+        btnGraph.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, Graph.class));
+            }
+        });
     }
 
     @Override
