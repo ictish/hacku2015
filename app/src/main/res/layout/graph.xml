@@ -12,7 +12,9 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="50dp"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="-30dp">
 
         <ImageButton
             android:layout_width="wrap_content"

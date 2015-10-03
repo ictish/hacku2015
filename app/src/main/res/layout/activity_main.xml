@@ -12,7 +12,9 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="50dp"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:layout_marginBottom="-30dp"
+        android:layout_marginTop="50dp">
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -66,28 +68,31 @@
             android:layout_height="200dp"
             android:id="@+id/logo"
             android:layout_gravity="center_horizontal"
-            android:background="@drawable/logo"
+            android:background="@drawable/human"
             android:layout_marginRight="35dp"
-            android:layout_marginLeft="15dp" />
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp" />
 
         <ImageButton
-            android:layout_width="75dp"
-            android:layout_height="75dp"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
             android:id="@+id/btnBinbo"
             android:background="@drawable/icon_binbo"
-            android:layout_marginLeft="195dp"
-            android:layout_marginTop="55dp"
+            android:layout_marginLeft="165dp"
+            android:layout_marginTop="32dp"
             android:src="@drawable/icon_binbo0"
             android:scaleType="fitXY" />
 
         <ImageButton
-            android:layout_width="75dp"
-            android:layout_height="75dp"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
             android:id="@+id/btnNekoze"
             android:layout_gravity="right"
             android:background="@drawable/icon_nekoze"
-            android:layout_marginRight="65dp"
-            android:layout_marginTop="25dp" />
+            android:layout_marginRight="56dp"
+            android:layout_marginTop="14dp"
+            android:src="@drawable/icon_nekoze0"
+            android:scaleType="fitXY" />
     </LinearLayout>
 
 </LinearLayout>
